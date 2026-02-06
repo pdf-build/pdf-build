@@ -4,8 +4,15 @@ const Navbar = () => {
   return (
     <nav className="w-full border-b bg-white">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="font-semibold text-lg">
-          PDF Tools
+        
+        {/* LOGO + BRAND NAME */}
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            src="/logo.jpg"
+            alt="PDF Tools Logo"
+            className="w-8 h-8"
+          />
+          <span className="font-semibold text-lg">PDF Tools</span>
         </Link>
 
         <div className="flex gap-6 text-sm font-medium text-gray-700">
